@@ -19,4 +19,6 @@ body {
     text-transform: uppercase;
     letter-spacing: .2em;
   }
-  
+
+  .footer{
+      margin-bottom:0px !important;}
