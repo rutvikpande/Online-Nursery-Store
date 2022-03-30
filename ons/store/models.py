@@ -41,6 +41,9 @@ class Product(models.Model):
         verbose_name='product'
         verbose_name_plural='products'
 
+    def get_url(self):
+        return reverse('product_detail', args=[self.category.slug, self.slug])
+
     #to create human readable formatting
 
     #to dispaly product name
