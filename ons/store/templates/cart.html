@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Cart
+{% endblock %}
+{% block content %}
+<div class="text-center">
+    <br>
+    <div class="text-center product_title">
+        Your shopping cart
+    </div>
+</div>
+<div class="row mx-auto">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+        <table class="table cart_table">
+            <thead class="cart_thead">
+                <tr>
+                    <th colspan="4">
+                        Your items
+                    </th>
+                </tr>
+            </thead>
+            {% for i in '123' %}
+            <tr>
+                <td>
+                    <a href="">
+                        <img src="{% static 'img/product-1.png' %}" width="100" height="100" alt="">
+                    </a>
+                </td>
+                <td class="text-left">
+                    Dummy
+                    <br>
+                    SKU: 5
+                    <br>
+                    Unit Price: RS 100
+                    <br>
+                    Qty: 2 x RS 100
+                </td>
+                <td>
+                    Rs 200
+                </td>
+                <td>
+                    &nbsp;<a href=""><i class="fas fa-plus-circle cart_icon"></i></a>
+                    &nbsp;<a href=""><i class="fas fa-minus-circle cart_icon"></i></a>
+                    &nbsp;<a href=""><i class="fas fa-trash-alt cart_icon"></i></a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+        <table class="table cart_table">
+            <thead class="cart_thead">
+                <tr>
+                    <th>
+                        Check out
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Please check your cart before proceeding for check out.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-left">
+                        Your total is: <strong>Rs 200</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="mx-auto">
+            <a href="" style="text-decoration: none;">
+                <button type="button" class="btn btn-lg btn-block bg-dark text-white">
+                    Continue Shopping
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
