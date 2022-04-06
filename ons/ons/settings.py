@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'store',
+    'stripe',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +125,9 @@ STATIC_ROOT=os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES=[os.path.join(BASE_DIR,'static')]
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR, 'static' , 'media')
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51KlSPmKO7WZhffnQSauxlMotUkKc2i3PP7P5JXmQRIh3sIolvtSYbcgoLjthKr6DhgFN6G0BRljLWAOXSVW9fEyR00tjMeAz9c'
+STRIPE_SECRET_KEY = 'sk_test_51KlSPmKO7WZhffnQpM5nVmR0CShVCPTSIh05pfETnwDaP2JLnx9Jb4aWm8FAI9Abc6q9flhzsjZas1zo9GIyto0u00cf4EuFic'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

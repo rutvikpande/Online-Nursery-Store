@@ -22,7 +22,7 @@ Product
                 <p class="text-justify product_text">{{product.description}}</p>
                 {% if product.stock <= 0 %}
                 <p class="text-justify product_text">
-                    <b>Out if stock</b>
+                    <b>Out of stock</b>
                 </p>
                 {% else %}
                 <a href="{% url 'add_cart' product.id %}">
